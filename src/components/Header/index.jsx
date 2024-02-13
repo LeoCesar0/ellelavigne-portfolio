@@ -5,32 +5,34 @@ export const Header = () => {
   const headerRef = useRef(null)
   useEffect(() => {
     const initialScroll = window.scrollY
-    window.addEventListener("scroll", (event) => {
+    const listener = window.addEventListener("scroll", (event) => {
       const offSet = window.scrollY - initialScroll
-      if (offSet > 20 ){
+      if (offSet > 20) {
         headerRef.current.classList.add(styles.scroll)
-      }
-      else{
+      } else {
         headerRef.current.classList.remove(styles.scroll)
       }
-
-        })
+    })
+    return () => {
+      window.removeEventListener("scroll", listener)
+    }
   }, [])
   return (
     <>
-      <header 
-      ref = {headerRef}
-      className={styles.header}>
+      <header ref={headerRef} className={styles.header}>
         <div className="container">
-          <button className={styles.menu}>
-            <img src="menu.svg" alt="" />
-          </button>
-          <nav className={styles.links}>
-            <a href="#">Izaelle Lavigne</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#sobre-mim">Sobre mim</a>
-            <a href="#contato">Contato</a>
-          </nav>
+          <div className={styles.content}>
+            <p className={styles.logo}>Izaelle Lavigne</p>
+            <button className={styles.menu}>
+              <img src="menu.svg" alt="" />
+            </button>
+            <nav className={styles.links}>
+              <a href="#">Izaelle Lavigne</a>
+              <a href="#projetos">Projetos</a>
+              <a href="#sobre-mim">Sobre mim</a>
+              <a href="#contato">Contato</a>
+            </nav>
+          </div>
         </div>
       </header>
     </>
