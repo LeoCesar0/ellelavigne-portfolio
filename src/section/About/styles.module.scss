@@ -1,5 +1,6 @@
+@import "../../styles/global.scss";
+
 .title {
- 
   font-weight: 400;
   letter-spacing: 3px;
   margin-bottom: 2rem;
@@ -7,16 +8,29 @@
 }
 .description {
   font-size: 1.5rem;
-  strong{
-    color: #540C33;
+  strong {
+    color: #540c33;
   }
-
 }
 .aboutme {
   display: flex;
 }
 .profile {
   height: 519px;
-   object-fit: cover;
+  object-fit: cover;
+}
 
+@include onMdDown() {
+  .title {
+    font-size: pxsToRem(24);
+    margin-bottom: pxsToRem(8);
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .profile {
+    display: none;
+  }
 }

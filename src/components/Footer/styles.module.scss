@@ -1,3 +1,5 @@
+@import "../../styles/global.scss";
+
 .footer {
   padding: 1.25rem 0;
   background-color: var(--background-secundary-color);
@@ -13,10 +15,10 @@
 .infos {
   display: flex;
   flex-direction: column;
-  gap: 2rem ;
+  gap: 2rem;
 }
 
-.infos a{
+.infos a {
   font-size: 2rem;
 }
 
@@ -24,4 +26,23 @@
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
+}
+
+@include onMdDown() {
+  .title{
+    letter-spacing: 0px;
+  }
+  .title,
+  .infos a {
+    font-size: 1rem;
+  }
+  .infos {
+    gap: pxsToRem(12);
+  }
+  .socialmedia {
+     margin-top: 1rem;
+    img {
+      height: 32px;
+    }
+  }
 }
