@@ -1,0 +1,53 @@
+@import "../../styles/global.scss";
+
+.card {
+  display: flex;
+  gap: 1rem;
+}
+
+.title {
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.titleCard {
+  font-family: "Rock Salt", cursive;
+  font-size: 2rem;
+}
+
+.description {
+  font-size: 2rem;
+}
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.toolsTitle {
+  font-size: 2rem;
+}
+.icon {
+  height: 32px;
+}
+.buttons {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  
+}
+.bntCard {
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 50px 0 rgb(0, 0, 0, 25%);
+  margin-top: 2rem;
+  display: block;
+  width: pxsToRem(247);
+  font-weight: 600;
+  text-align: center;
+  font-size: pxsToRem(24);
+}
+
+.cardImg {
+  object-fit: cover;
+  height: 318px;
+}

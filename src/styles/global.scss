@@ -1,0 +1,69 @@
+@use 'sass:math';
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+
+ $bpSm: 425px;
+  $bpMd: 910px;
+
+:root {
+  --background-color: #fff0f4;
+  --background-secundary-color: #ffdde6;
+  --bnt-color: #f4b7c4;
+  --text-color: #2d2d2d;
+  
+  
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+
+}
+button{
+  background: transparent;
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5.875rem;
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+// Funções //
+@mixin onSm() {
+  @media (max-width: $bpSm) {
+    @content;   
+  }
+}
+
+@mixin onMdDown() {
+  @media (max-width: $bpMd) {
+    @content;
+  }
+}
+@function pxsToRem($value) {
+	$remValue: math.div($value, 16) * 1rem;
+	@return $remValue;
+}

@@ -1,0 +1,46 @@
+@import "../../styles/global.scss";
+
+.sectionHero {
+  position: relative;
+  padding: 0 16px;
+}
+.content {
+  max-width: 609px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.text {
+  font-size: 2rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.tech {
+  font-size: 2rem;
+  padding-right: 1.25rem;
+  border-right: 1px solid var(--text-color);
+}
+.techs {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+.avatar {
+  position: absolute;
+  top: -63px;
+  right: calc(128 / 571 * 100% * -1);
+}
+@include onMdDown() {
+  .avatar {
+    display: none;
+  }
+}

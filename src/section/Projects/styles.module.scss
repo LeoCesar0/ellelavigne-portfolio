@@ -1,0 +1,10 @@
+@import "../../styles/global.scss";
+
+.main {
+  padding-top: 1.5rem;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: pxsToRem(64);
+}
