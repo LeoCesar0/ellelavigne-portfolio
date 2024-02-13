@@ -40,7 +40,32 @@
   right: calc(128 / 571 * 100% * -1);
 }
 @include onMdDown() {
+  .sectionHero {
+    margin-top: 48px !important;
+  }
+
   .avatar {
     display: none;
+  }
+
+  .title {
+    font-size: pxsToRem(24);
+  }
+  .text {
+    font-size: 1rem;
+  }
+
+  .tech {
+    font-size: 1rem;
+  }
+
+  .techs {
+    gap: 1rem;
+  }
+
+  .content {
+    img {
+      height: 32px;
+    }
   }
 }

@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 * {
   padding: 0;
   margin: 0;
@@ -8,24 +8,22 @@
   font-family: "Poppins", sans-serif;
 }
 
- $bpSm: 425px;
-  $bpMd: 910px;
-  $pageContainerGap: 5.875rem;
+$bpSm: 425px;
+$bpMd: 910px;
+$pageContainerGap: 5.875rem;
+$pageContainerGapMobile: 2rem;
 
 :root {
   --background-color: #fff0f4;
   --background-secundary-color: #ffdde6;
   --bnt-color: #f4b7c4;
   --text-color: #2d2d2d;
-  
-  
 }
 a {
   text-decoration: none;
   color: var(--text-color);
-
 }
-button{
+button {
   background: transparent;
   cursor: pointer;
 }
@@ -33,6 +31,13 @@ button{
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+.container {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 #page-container {
@@ -46,18 +51,10 @@ body {
   position: relative;
 }
 
-.container {
-  max-width: 1060px;
-  width: 100%;
-  margin: 0 auto;
-    padding: 0 16px;
-
-}
-
 // Funções //
 @mixin onSm() {
   @media (max-width: $bpSm) {
-    @content;   
+    @content;
   }
 }
 
@@ -67,6 +64,14 @@ body {
   }
 }
 @function pxsToRem($value) {
-	$remValue: math.div($value, 16) * 1rem;
-	@return $remValue;
+  $remValue: math.div($value, 16) * 1rem;
+  @return $remValue;
+}
+
+//
+
+@include onMdDown() {
+  #page-container {
+    gap: $pageContainerGapMobile;
+  }
 }
