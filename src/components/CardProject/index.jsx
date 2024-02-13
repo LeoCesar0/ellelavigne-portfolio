@@ -23,14 +23,12 @@ export const CardProject = ({
                 <h3 className={styles.toolsTitle}>Tools</h3>
                 {tools.map((tool) => {
                   return (
-                    <>
-                      <img
-                        key={tool}
-                        className={styles.icon}
-                        src={`${tool}.svg`}
-                        alt=""
-                      />
-                    </>
+                    <img
+                      key={`${title}-${tool}`}
+                      className={styles.icon}
+                      src={`${tool}.svg`}
+                      alt=""
+                    />
                   )
                 })}
               </div>

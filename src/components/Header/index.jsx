@@ -1,7 +1,10 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import styles from "./styles.module.scss"
+import { Menu } from "../Menu"
 
 export const Header = () => {
+  const [menuIsOpen, setMenuIsOpen] = useState(false)
+
   const headerRef = useRef(null)
   useEffect(() => {
     const initialScroll = window.scrollY
@@ -23,7 +26,12 @@ export const Header = () => {
         <div className="container">
           <div className={styles.content}>
             <p className={styles.logo}>Izaelle Lavigne</p>
-            <button className={styles.menu}>
+            <button
+              className={styles.menu}
+              onClick={() => {
+                setMenuIsOpen(true)
+              }}
+            >
               <img src="menu.svg" alt="" />
             </button>
             <nav className={styles.links}>
@@ -35,6 +43,7 @@ export const Header = () => {
           </div>
         </div>
       </header>
+      <Menu isOpen={menuIsOpen} setIsOpen={setMenuIsOpen} />
     </>
   )
 }

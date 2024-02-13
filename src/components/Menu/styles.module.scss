@@ -1,0 +1,50 @@
+@import "../../styles/global.scss";
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 200;
+  display: none;
+}
+.isOpen {
+  display: block;
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.aside {
+  width: 260px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateX(260px);
+  background-color: var(--background-color);
+  animation: slideIn 250ms forwards;
+
+  padding: 54px 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: -6px 4px 20px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  gap: 32px;
+  align-items: center;
+
+  a {
+    font-size: 24px;
+  }
+}
