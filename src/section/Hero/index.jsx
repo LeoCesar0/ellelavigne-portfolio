@@ -6,7 +6,7 @@ export const Hero = () => {
       <section className={`container ${styles.sectionHero} `}>
         <div className={styles.content}>
           <h1 className={styles.title}>
-            Web Designer, front-end React desenvolvedora.
+            Web Designer, front-end React developer.
           </h1>
           <p className={styles.text}>
             Olá! me chamo Izaelle e sou web designer e desenvolvedora. Brasil📍
