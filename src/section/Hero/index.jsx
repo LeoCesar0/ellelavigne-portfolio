@@ -12,8 +12,8 @@ export const Hero = () => {
             Olá! me chamo Izaelle e sou web designer e desenvolvedora. Brasil📍
           </p>
           <div className={styles.icons}>
-            <img src="github.svg" alt="logo do github" />
-            <img src="linkedin.svg" alt="logo do linkedin" />
+            <img src="github.svg" alt="logo github" />
+            <img src="linkedin.svg" alt="logo linkedin" />
           </div>
           <div className={styles.techs}>
             <h3 className={styles.tech}>Tech</h3>

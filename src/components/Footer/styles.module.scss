@@ -35,6 +35,11 @@
   .title,
   .infos a {
     font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+  }
+  .infos a img {
+    margin-left: 1rem;
   }
   .infos {
     gap: pxsToRem(12);
