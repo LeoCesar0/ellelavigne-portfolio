@@ -32,7 +32,7 @@ export const Projects = () => {
               }
               tools={["figma"]}
               figmalink={
-                "https://www.figma.com/file/UifcireseDF7eVbFDJcnKU/Landing-Page-%7C-Web-site?type=design&t=Lh7NONr7qjo7iUKY-6"
+                "https://www.figma.com/file/uiMYccnfTUEVCtYKdWTAtQ/eCommerce-Website-%2F-Lossi?type=design&t=q1kY6tSUHiB8CfBZ-6"
               }
               cardImg={"card-img-lossi-e.png"}
             />
@@ -49,7 +49,7 @@ export const Projects = () => {
               tools={["html", "css", "js", "react", "figma"]}
               githubLink={"https://github.com/ElleLavigne"}
               figmalink={
-                "https://www.figma.com/file/UifcireseDF7eVbFDJcnKU/Landing-Page-%7C-Web-site?type=design&t=Lh7NONr7qjo7iUKY-6"
+                "https://www.figma.com/file/0CeSt8LqWQETlbfT6ERyD5/Overwatch-heros?type=design&t=q1kY6tSUHiB8CfBZ-6"
               }
               cardImg={"card-img-ow.png"}
             />

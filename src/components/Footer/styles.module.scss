@@ -1,0 +1,27 @@
+.footer {
+  padding: 1.25rem 0;
+  background-color: var(--background-secundary-color);
+}
+
+.title {
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: var(--text-color);
+  font-size: 2.5rem;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem ;
+}
+
+.infos a{
+  font-size: 2rem;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
