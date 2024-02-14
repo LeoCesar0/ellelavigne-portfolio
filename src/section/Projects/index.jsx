@@ -47,7 +47,7 @@ export const Projects = () => {
                 </>
               }
               tools={["html", "css", "js", "react", "figma"]}
-              githubLink={"https://github.com/ElleLavigne"}
+              githubLink={"https://github.com/ElleLavigne/overwatch-heroes"}
               figmalink={
                 "https://www.figma.com/file/0CeSt8LqWQETlbfT6ERyD5/Overwatch-heros?type=design&t=q1kY6tSUHiB8CfBZ-6"
               }
