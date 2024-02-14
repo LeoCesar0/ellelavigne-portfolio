@@ -1,5 +1,8 @@
 import styles from "./styles.module.scss"
 export const Menu = ({ isOpen, setIsOpen }) => {
+  const close = () => {
+    setIsOpen(false)
+  }
   return (
     <>
       <div
@@ -16,9 +19,30 @@ export const Menu = ({ isOpen, setIsOpen }) => {
         >
           <p className={styles.title}>Izaelle Lavigne</p>
           <nav className={styles.links}>
-            <a href="#projetos">Projetos</a>
-            <a href="#sobre-mim">Sobre Mim</a>
-            <a href="#contato">Fale Comigo</a>
+            <a
+              href="#projetos"
+              onClick={() => {
+                close()
+              }}
+            >
+              Projetos
+            </a>
+            <a
+              href="#sobre-mim"
+              onClick={() => {
+                close()
+              }}
+            >
+              Sobre Mim
+            </a>
+            <a
+              href="#contato"
+              onClick={() => {
+                close()
+              }}
+            >
+              Fale Comigo
+            </a>
           </nav>
           <div className={styles.linkIcons}></div>
         </aside>

@@ -16,6 +16,9 @@ export const Header = () => {
         headerRef.current.classList.remove(styles.scroll)
       }
     })
+    window.scroll({
+      behavior:"smooth"
+    })
     return () => {
       window.removeEventListener("scroll", listener)
     }
@@ -35,7 +38,7 @@ export const Header = () => {
               <img src="menu.svg" alt="" />
             </button>
             <nav className={styles.links}>
-              <a href="#">Izaelle Lavigne</a>
+             <h1 className={styles.name}>Izaelle Lavigne</h1>
               <a href="#projetos">Projetos</a>
               <a href="#sobre-mim">Sobre mim</a>
               <a href="#contato">Contato</a>

@@ -25,6 +25,10 @@
 .logo {
   display: none;
 }
+.name{
+  font-size: 2rem;
+  font-weight: 400;
+}
 
 @include onMdDown() {
   .header {

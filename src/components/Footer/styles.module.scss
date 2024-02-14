@@ -28,6 +28,9 @@
   margin-top: 2rem;
 }
 
+.infos a img {
+  margin-left: 1rem;
+}
 @include onMdDown() {
   .title{
     letter-spacing: 0px;
@@ -37,9 +40,6 @@
     font-size: 1rem;
     display: inline-flex;
     align-items: center;
-  }
-  .infos a img {
-    margin-left: 1rem;
   }
   .infos {
     gap: pxsToRem(12);

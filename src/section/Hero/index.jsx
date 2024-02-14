@@ -12,8 +12,16 @@ export const Hero = () => {
             Olá! me chamo Izaelle e sou web designer e desenvolvedora. Brasil📍
           </p>
           <div className={styles.icons}>
-            <img src="github.svg" alt="logo github" />
-            <img src="linkedin.svg" alt="logo linkedin" />
+            <a target="blank" href="https://github.com/ElleLavigne">
+              <img src="github.svg" alt="logo github" />
+            </a>
+
+            <a
+              target="blank"
+              href="https://www.linkedin.com/in/izaelle-avril-lavigne-brito-pessoa-18a62427a/"
+            >
+              <img src="linkedin.svg" alt="logo linkedin" />
+            </a>
           </div>
           <div className={styles.techs}>
             <h3 className={styles.tech}>Tech</h3>
@@ -27,8 +35,5 @@ export const Hero = () => {
         <img className={styles.avatar} src="avatar.png" alt="" />
       </section>
     </>
-  ) 
-  
-  
-  
+  )
 }

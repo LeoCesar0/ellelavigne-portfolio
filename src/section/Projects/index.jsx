@@ -4,7 +4,7 @@ import styles from "./styles.module.scss"
 export const Projects = () => {
   return (
     <>
-      <main className={styles.main}>
+      <main className={styles.main} id="projetos">
         <div className="container">
           <h2 className={styles.title}>Projetos</h2>
           <div className={styles.cards}>

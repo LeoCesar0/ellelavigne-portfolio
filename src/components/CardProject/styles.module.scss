@@ -29,8 +29,8 @@
   height: 32px;
 }
 .buttons {
-  display: flex;
-  gap: 2rem;
+ display: flex;
+  gap: 1rem;
   align-items: center;
   margin-top: 2rem;
   flex-wrap: wrap;
@@ -40,7 +40,7 @@
   border-radius: 15px;
   box-shadow: 0 4px 50px 0 rgb(0, 0, 0, 25%);
   display: block;
-  width: pxsToRem(247);
+  width: pxsToRem(235);
   font-weight: 600;
   text-align: center;
   font-size: pxsToRem(24);
