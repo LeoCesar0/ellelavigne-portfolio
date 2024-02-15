@@ -9,6 +9,22 @@ export const Projects = () => {
           <h2 className={styles.title}>Projetos</h2>
           <div className={styles.cards}>
             <CardProject
+              title="Delivery"
+              description={
+                <>
+                  <b>Aplicativo de entrega</b> Criado com base em estudar mobile
+                  e animações com figma <b>Versão Mobile.</b>
+                </>
+              }
+              buttonTextColor="#FFF0F4"
+              buttonColor="#1C0113"
+              tools={["figma"]}
+              figmalink={
+                "https://www.figma.com/file/EbWcJMi4DubHvi7KezCx95/App-Delivery?type=design&t=DWpYHyc0wS3Q6cSp-6"
+              }
+              cardImg={"card-img-delivery.png"}
+            />
+            <CardProject
               title="Lossi"
               description={
                 <>
