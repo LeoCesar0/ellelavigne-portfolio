@@ -6,7 +6,7 @@ export const CardProject = ({
   tools,
   buttonTextColor = "#3A121E",
   buttonColor = "#F4B7C4",
-  figmalink,
+  figmaLink,
   githubLink,
   cardImg,
 }) => {
@@ -18,7 +18,9 @@ export const CardProject = ({
         <div className={styles.cardContainer}>
           <div className={styles.content}>
             <div className={styles.textCard}>
-              <p className={styles.description}>{description}</p>
+              <p className={styles.description}
+                dangerouslySetInnerHTML={{ __html: description }}
+              />
               <div className={styles.tools}>
                 <h3 className={styles.toolsTitle}>Tools</h3>
                 {tools.map((tool) => {
@@ -33,12 +35,12 @@ export const CardProject = ({
                 })}
               </div>
               <div className={styles.buttons}>
-                {figmalink && (
+                {figmaLink && (
                   <a
                     style={buttonStyle}
                     className={styles.bntCard}
                     target="blank"
-                    href={figmalink}
+                    href={figmaLink}
                   >
                     Figma
                   </a>
@@ -63,3 +65,4 @@ export const CardProject = ({
     </>
   )
 }
+
